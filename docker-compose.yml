@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  cassio-souza:
+    container_name: cassio-souza
+    image: node:lts-alpine
+    working_dir: "/cassio-souza"
+    user: 1000:1000
+    command: sh -c "yarn && yarn run start"
+    ports:
+      - 3333:3333
+    volumes:
+      - ./:/cassio-souza
