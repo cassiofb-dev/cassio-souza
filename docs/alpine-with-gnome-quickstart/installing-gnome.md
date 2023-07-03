@@ -11,7 +11,7 @@ Let's see in this section how to install Gnome on Alpine Linux.
 When you start a standard Alpine image your screen should look like this:
 
 <p align="center">
-    <img alt="alpine start" src="/img/alpine_standard.png"/>
+    <img alt="Alpine Standard Image Start Screen" src="/img/alpine_standard.png"/>
     <h3>Alpine Standard Image Start Screen</h3>
 </p>
 
@@ -34,6 +34,6 @@ With all setup you can follow the steps bellow to install Gnome:
 13. Congratulations! Reboot your system and Gnome will start!
 
 <p align="center">
-    <img alt="alpine start" src="/img/alpine_gnome.png"/>
+    <img alt="Alpine Gnome Start Screen" src="/img/alpine_gnome.png"/>
     <h3>Alpine Gnome Start Screen</h3>
 </p>

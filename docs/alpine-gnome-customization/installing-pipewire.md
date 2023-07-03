@@ -30,6 +30,6 @@ autospawn = no
 5. If your result is the same from the image bellow, congratulations!
 
 <p align="center">
-    <img alt="alpine start" src="/img/alpine_pipewire.png"/>
+    <img alt="Alpine wireplumber, pipewire and pipewire-pulse process in htop" src="/img/alpine_pipewire.png"/>
     <h3>Alpine wireplumber, pipewire and pipewire-pulse process in htop</h3>
 </p>

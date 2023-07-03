@@ -14,4 +14,4 @@ After this you can also check these:
 
 - [Installing Pipewire](../alpine-gnome-customization/installing-pipewire)
 - [Installing Flatpak](../alpine-gnome-customization/installing-flatpak)
-- [Installing Dracula Theme](../alpine-gnome-customization/installing-dracula-theme-in-gnome)
+- [Installing Catpuccin Theme](../alpine-gnome-customization/installing-catppuccin-theme-in-gnome)
