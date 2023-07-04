@@ -1,4 +1,5 @@
 ---
+date: 2023-07-03T00:00
 slug: installing-docker-in-alpine-linux
 title: Installing Docker in Alpine Linux
 description: This post will be quick but with two awesome tools installation (docker and lazydocker)!
@@ -8,7 +9,7 @@ tags: [development, docker]
 
 Hi, Cassio's here!
 
-This post will be quick but with two awesome tools installation (docker and lazydocker)!
+This post will be quick but with two awesome tools installation ([Docker](https://www.docker.com/) and [Lazydocker](https://github.com/jesseduffield/lazydocker))!
 
 <!-- truncate -->
 
