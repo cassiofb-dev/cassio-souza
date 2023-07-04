@@ -18,7 +18,7 @@ please open an issue [on this repository](https://github.com/cassiofb-dev/cassio
 This tutorial teaches how to install a standard base Alpine install, if you want to learn or configure deeper please see [the official wiki](https://wiki.alpinelinux.org/wiki/Installation). Bellow is the steps to do a easy and painless standard install, you can download [Alpine here](https://www.alpinelinux.org/downloads/).
 
 <p align="center">
-    <img alt="alpine start" src="/img/alpine_install.png"/>
+    <img alt="Alpine Standard Image Installation Start Screen" src="/img/alpine_install.png"/>
     <h3>Alpine Standard Image Installation Start Screen</h3>
 </p>
 
