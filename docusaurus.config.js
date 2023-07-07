@@ -32,6 +32,36 @@ const config = {
     locales: ['en'],
   },
 
+  headTags: [
+    {
+      // Google search console metatag
+      // <meta name="google-site-verification" content="Dw3qwr4EXaOirp41QsYEBxtJlmgr-9ZgtVQzzGoFGcI" />
+      tagName: 'meta',
+      attributes: {
+        name: 'google-site-verification',
+        content: 'Dw3qwr4EXaOirp41QsYEBxtJlmgr-9ZgtVQzzGoFGcI',
+      },
+    },
+    {
+      // Microsoft Bing Webmaster Tools
+      // <meta name="msvalidate.01" content="4DB2206D095FE64FBB11B2069CAF0DB4" />
+      tagName: 'meta',
+      attributes: {
+        name: 'msvalidate.01',
+        content: '4DB2206D095FE64FBB11B2069CAF0DB4',
+      },
+    },
+    {
+      // Yandex Webmaster
+      // <meta name="yandex-verification" content="cec0c07cd825efc2" />
+      tagName: 'meta',
+      attributes: {
+        name: 'yandex-verification',
+        content: 'cec0c07cd825efc2',
+      },
+    },
+  ],
+
   presets: [
     [
       'classic',
