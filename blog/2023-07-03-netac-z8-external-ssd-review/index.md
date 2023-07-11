@@ -35,17 +35,23 @@ For an external portable SSD it was a awesome performance, I did not give full p
 
 ### Netac Z8 ExFAT (Windows)
 
+I ran this test on windows with ExFAT filesystem that is owned by microsoft. This filesystem is ideal for portable storage devices and can also run on Linux with kernel version 5.4 or higher.
+
 ![Netac Z8 ExFAT](netac-z8-exfat.png)
 
 ---
 
 ### Netac Z8 FAT32 (Linux)
 
+This test was done on Linux with FAT32 filesystem that is older than ExFAT but with more compatibility.
+
 ![Netac Z8 FAT32](netac-z8-fat32.png)
 
 ---
 
 ### Netac Z8 EXT4 (Linux)
+
+The last test was also done on Linux but with EXT4 open source filesystem that's most used on Linux installations.
 
 ![Netac Z8 EXT4](netac-z8-ext4.png)
 
