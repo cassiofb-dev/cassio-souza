@@ -7,7 +7,7 @@ authors: [cassio]
 tags: [review, hardware, ssd]
 ---
 
-Hi, Cassio's here!
+Hi, Cassio here!
 
 Today I'll write a quick review on [Netac Z8 External SSD](https://www.netac.com/product/Z8-79.html) (500GB Version).
 

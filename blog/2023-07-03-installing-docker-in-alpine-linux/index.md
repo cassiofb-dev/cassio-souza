@@ -7,7 +7,7 @@ authors: [cassio]
 tags: [development, docker]
 ---
 
-Hi, Cassio's here!
+Hi, Cassio here!
 
 This post will be quick but with two awesome tools installation ([Docker](https://www.docker.com/) and [Lazydocker](https://github.com/jesseduffield/lazydocker))!
 
