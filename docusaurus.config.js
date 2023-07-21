@@ -103,7 +103,6 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {href: 'https://cassio-souza.pages.dev/pdfs/cassio-fernando-cv.en.pdf', label: 'Curriculum', position: 'left'},
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
@@ -111,6 +110,12 @@ const config = {
             label: 'Tutorials',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {href: 'https://cassio-souza.pages.dev/pdfs/cassio-fernando-cv.en.pdf', label: 'Curriculum', position: 'right'},
+          {
+            href: 'https://matrix.to/#/#cassio-souza:matrix.org',
+            label: 'Matrix',
+            position: 'right',
+          },
           {
             href: 'https://github.com/cassiofb-dev/cassio-souza',
             label: 'GitHub',
