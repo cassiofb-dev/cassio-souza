@@ -7,7 +7,7 @@ import { useColorMode } from "@docusaurus/theme-common";
 import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import { DataGrid, GridColDef, GridToolbar } from "@mui/x-data-grid";
 
-import GPU_RASTERIZATION_DATABASE from "./gpu_rasterization_database.json";
+import GPU_RAYTRACING_DATABASE from "./gpu_ray_tracing_database.json";
 
 const numericRegex = /[+-]?([0-9]*[.])?[0-9]+/;
 const numberComparator = (a: string, b: string) => {
@@ -109,16 +109,16 @@ export default function DataTable() {
     "Shaders Count": "FPS per Shaders Count",
   };
 
-  const [rows, setRows] = React.useState(cloneDeep(GPU_RASTERIZATION_DATABASE));
+  const [rows, setRows] = React.useState(cloneDeep(GPU_RAYTRACING_DATABASE));
   const [columns, setColumns] = React.useState(cloneDeep(columnsInitialState));
 
   const handleChange = (event: any) => {
-    setRows(cloneDeep(GPU_RASTERIZATION_DATABASE));
+    setRows(cloneDeep(GPU_RAYTRACING_DATABASE));
     setColumns(cloneDeep(columnsInitialState));
 
     const selectedDivisorField = event.target.value;
 
-    const newRows = cloneDeep(GPU_RASTERIZATION_DATABASE);
+    const newRows = cloneDeep(GPU_RAYTRACING_DATABASE);
     const newColumns = cloneDeep(columnsInitialState) as GridColDef[];
     if (Boolean(selectedDivisorField)) {
       for (const divisibleField of divisibleFields) {
@@ -138,7 +138,7 @@ export default function DataTable() {
   };
 
   return (
-    <div style={{ height: 400, width: "100%", marginBottom: "128px" }}>
+    <div style={{ height: 400, width: "100%" }}>
       <div
         style={{
           display: "flex",
