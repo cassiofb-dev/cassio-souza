@@ -7,8 +7,6 @@ import { useColorMode } from "@docusaurus/theme-common";
 import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import { DataGrid, GridColDef, GridToolbar } from "@mui/x-data-grid";
 
-import GPU_RASTERIZATION_DATABASE from "./gpu_rasterization_database.json";
-
 const numericRegex = /[+-]?([0-9]*[.])?[0-9]+/;
 const numberComparator = (a: string, b: string) => {
   const x = Number(a?.match(numericRegex).shift()) || 0;
@@ -79,7 +77,7 @@ const columnsInitialState: GridColDef[] = [
   },
 ];
 
-export default function DataTable() {
+export default function GpuTableDatabase({ gpuDatabase }) {
   const { colorMode } = useColorMode();
 
   const darkTheme = createTheme({
@@ -102,34 +100,39 @@ export default function DataTable() {
   ];
 
   const unitMap = {
-    "TDP": "FPS per Watts",
-    "Bandwidth": "FPS per GB/s",
-    "VRAM": "FPS per GB",
-    "Clock": "FPS per MHz",
+    TDP: "FPS per Watts",
+    Bandwidth: "FPS per GB/s",
+    VRAM: "FPS per GB",
+    Clock: "FPS per MHz",
     "Shaders Count": "FPS per Shaders Count",
   };
 
-  const [rows, setRows] = React.useState(cloneDeep(GPU_RASTERIZATION_DATABASE));
+  const [rows, setRows] = React.useState(cloneDeep(gpuDatabase));
   const [columns, setColumns] = React.useState(cloneDeep(columnsInitialState));
 
   const handleChange = (event: any) => {
-    setRows(cloneDeep(GPU_RASTERIZATION_DATABASE));
+    setRows(cloneDeep(gpuDatabase));
     setColumns(cloneDeep(columnsInitialState));
 
     const selectedDivisorField = event.target.value;
 
-    const newRows = cloneDeep(GPU_RASTERIZATION_DATABASE);
+    const newRows = cloneDeep(gpuDatabase);
     const newColumns = cloneDeep(columnsInitialState) as GridColDef[];
     if (Boolean(selectedDivisorField)) {
       for (const divisibleField of divisibleFields) {
         for (const row of newRows) {
-          row[divisibleField] = row[divisibleField] / row[selectedDivisorField].match(numericRegex)[0];
+          row[divisibleField] =
+            row[divisibleField] /
+            row[selectedDivisorField].match(numericRegex)[0];
           row[divisibleField] = row[divisibleField].toFixed(3);
         }
       }
 
       for (const column of newColumns) {
-        column.headerName = column.headerName.replace("FPS", unitMap[selectedDivisorField]);
+        column.headerName = column.headerName.replace(
+          "FPS",
+          unitMap[selectedDivisorField]
+        );
       }
     }
 
@@ -168,11 +171,11 @@ export default function DataTable() {
             toolbar: GridToolbar,
           }}
           sx={{
-            '& .MuiDataGrid-columnHeaderTitle': {
-                textOverflow: "clip",
-                whiteSpace: "break-spaces",
-                lineHeight: 1.5,
-            }
+            "& .MuiDataGrid-columnHeaderTitle": {
+              textOverflow: "clip",
+              whiteSpace: "break-spaces",
+              lineHeight: 1.5,
+            },
           }}
         />
       </ThemeProvider>
