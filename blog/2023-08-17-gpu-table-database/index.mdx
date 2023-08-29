@@ -1,0 +1,39 @@
+---
+slug: gpu-table-database
+title: GPU Table Database
+description: Today I'll share make a table with Tom's Hardware database
+authors: [cassio]
+tags: [gpu, hardware, database]
+---
+
+Hi, Cassio here!
+
+Today I'll share a nice table I'm doing with [Tom's Hardware](https://www.tomshardware.com/reviews/gpu-hierarchy,4388.html) benchmark data!
+
+<!-- truncate -->
+
+:::caution
+
+The data bellow is up to the date August 17th 2023, if it's outdated please send me a message.
+
+:::
+
+## Rasterization Data
+
+The table bellow shows the benchmark results for rasterization, you can also divide the results for some other data in the select bellow.
+
+---
+
+import GpuRasterizationDataGrid from "./GpuRasterizationDataGrid";
+
+<GpuRasterizationDataGrid />
+
+## Ray Tracing Data
+
+The table bellow shows the benchmark results for ray tracing, you can also divide the results for some other data in the select bellow.
+
+---
+
+import GpuRayTracingDataGrid from "./GpuRayTracingDataGrid";
+
+<GpuRayTracingDataGrid />
