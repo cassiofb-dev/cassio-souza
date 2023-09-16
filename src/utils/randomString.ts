@@ -1,11 +1,17 @@
-import decimalToHexagonal from "./decimalToHexagonal";
+import characters from "./characters";
 
-const randomString = () => {
-  const array = new Uint32Array(32);
+const randomString = (size = 64) => {
+  let result = "";
 
-  window.crypto.getRandomValues(array);
+  while (result.length < size) {
+    const random = Math.random();
 
-  return Array.from(array, decimalToHexagonal).join('');
+    const char = characters.charAt(Math.floor(random * characters.length));
+
+    result += char;
+  }
+
+  return result;
 }
 
 export default randomString;
