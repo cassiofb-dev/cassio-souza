@@ -7,13 +7,8 @@ import { useColorMode } from "@docusaurus/theme-common";
 import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import { DataGrid, GridColDef, GridToolbar } from "@mui/x-data-grid";
 
-const numericRegex = /[+-]?([0-9]*[.])?[0-9]+/;
-const numberComparator = (a: string, b: string) => {
-  const x = Number(a?.match(numericRegex).shift()) || 0;
-  const y = Number(b?.match(numericRegex).shift()) || 0;
-
-  return x - y;
-};
+import compareStringNumbers from "../../src/utils/compareStringNumbers";
+import numericRegex from "../../src/utils/numericRegex";
 
 const columnsInitialState: GridColDef[] = [
   {
@@ -25,25 +20,25 @@ const columnsInitialState: GridColDef[] = [
     field: "1080p Ultra",
     headerName: "1080p Ultra\n(FPS)",
     width: 192,
-    sortComparator: numberComparator,
+    sortComparator: compareStringNumbers,
   },
   {
     field: "1080p Medium",
     headerName: "1080p Medium\n(FPS)",
     width: 192,
-    sortComparator: numberComparator,
+    sortComparator: compareStringNumbers,
   },
   {
     field: "1440p Ultra",
     headerName: "1440p Ultra\n(FPS)",
     width: 192,
-    sortComparator: numberComparator,
+    sortComparator: compareStringNumbers,
   },
   {
     field: "4K Ultra",
     headerName: "4K Ultra\n(FPS)",
     width: 192,
-    sortComparator: numberComparator,
+    sortComparator: compareStringNumbers,
   },
   {
     field: "Chipset",
