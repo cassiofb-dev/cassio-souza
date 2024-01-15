@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import Heading from '@theme/Heading';
 
 type FeatureItem = {
   title: string;
@@ -47,7 +48,9 @@ function Feature({title, Svg, description}: FeatureItem) {
         <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
+        <Heading as="h3" className="hero__title">
+          {title}
+        </Heading>
         <p>{description}</p>
       </div>
     </div>
