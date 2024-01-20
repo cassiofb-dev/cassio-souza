@@ -96,6 +96,8 @@ const config: Config = {
         logo: {
           alt: 'Cassio',
           src: 'img/logo.svg',
+          height: '32px',
+          width: '54px',
         },
         items: [
           {
