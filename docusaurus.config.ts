@@ -3,12 +3,12 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Cássio Souza',
+  title: 'Cássio Fernando',
   tagline: 'Personal Website and Blog.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://cassio-souza.pages.dev/',
+  url: 'https://cassiofernando.com/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -90,7 +90,7 @@ const config: Config = {
         defaultMode: 'light',
       },
       // Replace with your project's social card
-      image: 'https://cassio-souza.pages.dev/img/social_card.png',
+      image: 'https://cassiofernando.com/img/social_card.png',
       navbar: {
         title: 'Home',
         logo: {
@@ -107,7 +107,7 @@ const config: Config = {
             label: 'Tutorials',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {href: 'https://cassio-souza.pages.dev/pdfs/cassio-fernando-cv.en.pdf', label: 'Curriculum', position: 'right'},
+          {href: 'https://cassiofernando.com/pdfs/cassio-fernando-cv.en.pdf', label: 'Curriculum', position: 'right'},
           {
             href: 'https://matrix.to/#/#cassio-souza:matrix.org',
             label: 'Matrix',
@@ -162,7 +162,7 @@ const config: Config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Cássio Souza.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Cássio Fernando.`,
       },
     prism: {
       theme: prismThemes.github,
