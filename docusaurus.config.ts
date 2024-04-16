@@ -144,7 +144,7 @@ const config: Config = {
               },
               {
                 label: 'Email',
-                href: 'mailto:cassiofb.souza@gmail.com',
+                href: 'mailto:contact@cassiofernando.com',
               },
             ],
           },
