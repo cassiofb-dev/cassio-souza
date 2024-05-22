@@ -8,7 +8,7 @@ Let's see in this section quick and easy steps to install Alpine Linux.
 
 :::note
 
-This tutorial was made using Alpine v3.18.x, if something is not working on future versions
+This tutorial was made using Alpine v3.20.x, if something is not working on future versions
 please open an issue [on this repository](https://github.com/cassiofb-dev/cassio-souza).
 
 :::
@@ -26,7 +26,7 @@ This tutorial teaches how to install a standard base Alpine install, if you want
 
 1. Login by typing: ``root``
 2. Start the setup script by running: ``setup-alpine``
-3. Select your keyboard layout en-us is: ``en us``
+3. Select your keyboard layout, en-us is: ``en us``
 4. Press enter to keep the default hostname
 5. Press enter to keep the default eth settings
 6. Press enter to keep the default IP address scheme
@@ -44,5 +44,5 @@ This tutorial teaches how to install a standard base Alpine install, if you want
 18. Type the disk to install Alpine **(MAKE SURE TO USE THE RIGHT DISK)**
 19. Install Alpine on the selected disk by typing: ``sys``
 20. Type ``y`` to proceed with the installation
-21. Reboot or Shutdown making sure to remove the installation media
+21. Reboot or shutdown
 22. Congratulations! Now Alpine is installed on your disk!

@@ -2,9 +2,9 @@
 sidebar_position: 2
 ---
 
-# Installing Gnome
+# Installing KDE Plasma 6
 
-Let's see in this section how to install Gnome on Alpine Linux.
+Let's see in this section how to install KDE Plasma 6 on Alpine Linux.
 
 ## Intro
 
@@ -17,7 +17,7 @@ When you start a standard Alpine image your screen should look like this:
 
 ## Steps
 
-With all setup you can follow the steps bellow to install Gnome:
+With all setup you can follow the steps bellow to install KDE Plasma:
 
 1. Type your username login
 2. Type your password
@@ -30,10 +30,10 @@ With all setup you can follow the steps bellow to install Gnome:
 9. Check if the ``#`` is removed from the last line by running: ``nano /etc/apk/repositories``
 10. Update the index of available packages again by running: ``doas apk update``
 11. Start the desktop script by typing: ``doas setup-desktop``
-12. Install Gnome by typing: ``gnome``
-13. Congratulations! Reboot your system and Gnome will start!
+12. Install Plasma by typing: ``plasma``
+13. Congratulations! Reboot your system and Plasma 6 will start!
 
 <p align="center">
-    <img alt="Alpine Gnome Start Screen" src="/img/alpine_gnome.png"/>
-    <h3>Alpine Gnome Start Screen</h3>
+    <img alt="Alpine Plasma Start Screen" src=""/>
+    <h3>Alpine Plasma Start Screen</h3>
 </p>
