@@ -1,9 +1,10 @@
 ---
-sidebar_position: 6
+sidebar_position: 4
 ---
 
 # Congratulations!
 
-You have just customized Alpine Gnome with **Wireplumber, Pipewire, Catppuccin, Flatpak and Wezterm**.
+You have just installed **Alpine Linux with Plasma 6**.
 
 Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://github.com/cassiofb-dev/cassio-souza)
+
