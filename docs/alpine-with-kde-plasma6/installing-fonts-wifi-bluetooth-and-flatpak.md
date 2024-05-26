@@ -39,7 +39,7 @@ We will use wpa_supplicant for this, if you want IWD, checkout the second and th
 
 1. Install network manager wifi support: ``doas apk add networkmanager-wifi``
 2. Add network manager service: ``doas rc-update add networkmanager default``
-3. Install wpa_supplicant: ``doas apk add wpa_suppplicant``
+3. Install wpa_supplicant: ``doas apk add wpa_supplicant``
 4. Add your user to plugdev group: ``doas adduser <your user> plugdev``
 5. Remove network from boot: ``doas rc-update del networking boot``
 6. Remove wpa_supplicant from boot: ``doas rc-update del wpa_supplicant boot``

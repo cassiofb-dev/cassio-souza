@@ -24,7 +24,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_frontend.svg').default,
     description: (
       <>
-        2 Years of experience in the most used frontend frameworks like
+        4 Years of experience in the most used frontend frameworks like
         Angular, Boostrap, Jquery and React.
       </>
     ),
@@ -34,7 +34,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_backend.svg').default,
     description: (
       <>
-        2 Years of experience in the most used backend frameworks like
+        4 Years of experience in the most used backend frameworks like
         Express, FastAPI, Laravel, and NestJS.
       </>
     ),
