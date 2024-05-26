@@ -17,11 +17,6 @@ please open an issue [on this repository](https://github.com/cassiofb-dev/cassio
 
 This tutorial teaches how to install a standard base Alpine install, if you want to learn or configure deeper please see [the official wiki](https://wiki.alpinelinux.org/wiki/Installation). Bellow is the steps to do a easy and painless standard install, you can download [Alpine here](https://www.alpinelinux.org/downloads/).
 
-<p align="center">
-    <img alt="Alpine Standard Image Installation Start Screen" src="/img/alpine_install.png"/>
-    <h3>Alpine Standard Image Installation Start Screen</h3>
-</p>
-
 ## Steps
 
 1. Login by typing: ``root``
@@ -34,15 +29,14 @@ This tutorial teaches how to install a standard base Alpine install, if you want
 8. Type a **strong** password for **root**
 9. Choose your timezone
 10. Press enter to keep the default proxy settings
-11. Press ``q``to exit the mirror list
-12. Press enter to keep the default mirror
-13. Type your system username
-14. Type your username full name
-15. Type a **strong** password for your user
-16. Press enter to keep the default ssh key settings
-17. Press enter to keep the default ssh server
-18. Type the disk to install Alpine **(MAKE SURE TO USE THE RIGHT DISK)**
-19. Install Alpine on the selected disk by typing: ``sys``
-20. Type ``y`` to proceed with the installation
-21. Reboot or shutdown
-22. Congratulations! Now Alpine is installed on your disk!
+11. Press enter to keep the default mirror
+12. Type your system username
+13. Type your username full name
+14. Type a **strong** password for your user
+15. Press enter to keep the default ssh key settings
+16. Press enter to keep the default ssh server
+17. Type the disk to install Alpine **(MAKE SURE TO USE THE RIGHT DISK)**
+18. Install Alpine on the selected disk by typing: ``sys``
+19. Type ``y`` to proceed with the installation
+20. Reboot or shutdown
+21. Congratulations! Now Alpine is installed on your disk!
