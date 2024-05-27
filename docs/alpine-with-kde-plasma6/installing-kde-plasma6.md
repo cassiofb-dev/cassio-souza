@@ -8,7 +8,7 @@ Let's see in this section how to install KDE Plasma 6 on Alpine Linux.
 
 ## Intro
 
-After installing Alpine stardand image you can procede to turn on so that now you can install Plasma 6.
+After installing Alpine standard image you can proceed to turn on so that now you can install Plasma 6.
 
 ## Steps
 

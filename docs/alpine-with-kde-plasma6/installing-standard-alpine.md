@@ -19,6 +19,12 @@ This tutorial teaches how to install a standard base Alpine install, if you want
 
 ## Steps
 
+:::warning
+
+The installer needs internet, makes sure you have a ethernet cable with stable connection!
+
+:::
+
 1. Login by typing: ``root``
 2. Start the setup script by running: ``setup-alpine``
 3. Select your keyboard layout, en-us is: ``en us``

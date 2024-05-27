@@ -109,7 +109,7 @@ const config: Config = {
           {to: '/blog', label: 'Blog', position: 'left'},
           {href: 'https://cassiofernando.com/pdfs/cassio-fernando-cv.en.pdf', label: 'Curriculum', position: 'right'},
           {
-            href: 'https://matrix.to/#/#cassio-souza:matrix.org',
+            href: 'https://matrix.to/#/@cassio:mozilla.org',
             label: 'Matrix',
             position: 'right',
           },
