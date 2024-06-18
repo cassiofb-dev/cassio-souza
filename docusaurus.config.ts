@@ -31,30 +31,12 @@ const config: Config = {
 
   headTags: [
     {
-      // Google search console metatag
-      // <meta name="google-site-verification" content="Dw3qwr4EXaOirp41QsYEBxtJlmgr-9ZgtVQzzGoFGcI" />
-      tagName: 'meta',
-      attributes: {
-        name: 'google-site-verification',
-        content: 'Dw3qwr4EXaOirp41QsYEBxtJlmgr-9ZgtVQzzGoFGcI',
-      },
-    },
-    {
-      // Microsoft Bing Webmaster Tools
-      // <meta name="msvalidate.01" content="4DB2206D095FE64FBB11B2069CAF0DB4" />
-      tagName: 'meta',
-      attributes: {
-        name: 'msvalidate.01',
-        content: '4DB2206D095FE64FBB11B2069CAF0DB4',
-      },
-    },
-    {
       // Yandex Webmaster
-      // <meta name="yandex-verification" content="cec0c07cd825efc2" />
+      // <meta name="yandex-verification" content="ac6c17905ec15f07" />
       tagName: 'meta',
       attributes: {
         name: 'yandex-verification',
-        content: 'cec0c07cd825efc2',
+        content: 'ac6c17905ec15f07',
       },
     },
   ],
@@ -151,6 +133,10 @@ const config: Config = {
           {
             title: 'More',
             items: [
+              {
+                label: 'Terminal',
+                href: 'https://term.cassiofernando.com/',
+              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/cassiofb-dev/cassio-souza',
