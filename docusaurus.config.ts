@@ -39,6 +39,15 @@ const config: Config = {
         content: 'ac6c17905ec15f07',
       },
     },
+    {
+      // Mastodon Verification
+      // <link rel="me" href="https://mastodon.social/@cassiofernando" />
+      tagName: 'link',
+      attributes: {
+        rel: 'me',
+        href: 'https://mastodon.social/@cassiofernando',
+      },
+    },
   ],
 
   presets: [
@@ -108,6 +117,10 @@ const config: Config = {
             title: 'Pages',
             items: [
               {
+                label: 'Blog',
+                to: '/blog',
+              },
+              {
                 label: 'Tutorials',
                 to: '/tutorials/welcome',
               },
@@ -117,16 +130,16 @@ const config: Config = {
             title: 'Contact',
             items: [
               {
-                label: 'Linkedin',
-                href: 'https://www.linkedin.com/in/cassiofb-dev',
+                label: 'Email',
+                href: 'mailto:contact@cassiofernando.com',
               },
               {
                 label: 'Twitter',
                 href: 'https://twitter.com/cassiofb_dev',
               },
               {
-                label: 'Email',
-                href: 'mailto:contact@cassiofernando.com',
+                label: 'Mastodon',
+                href: 'https://mastodon.social/@cassiofernando',
               },
             ],
           },
@@ -134,16 +147,12 @@ const config: Config = {
             title: 'More',
             items: [
               {
-                label: 'Terminal',
-                href: 'https://term.cassiofernando.com/',
-              },
-              {
                 label: 'GitHub',
                 href: 'https://github.com/cassiofb-dev/cassio-souza',
               },
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Terminal',
+                href: 'https://term.cassiofernando.com/',
               },
             ],
           },
