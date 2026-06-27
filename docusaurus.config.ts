@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
@@ -19,7 +19,11 @@ const config: Config = {
   projectName: 'cassio-souza', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -60,7 +64,7 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/cassiofb-dev/cassio-souza/tree/main',
-            routeBasePath: '/tutorials',
+          routeBasePath: '/tutorials',
         },
         blog: {
           showReadingTime: true,
@@ -68,6 +72,7 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/cassiofb-dev/cassio-souza/tree/main',
+          onUntruncatedBlogPosts: 'ignore',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -77,93 +82,112 @@ const config: Config = {
   ],
 
   themeConfig: {
-      colorMode: {
-        defaultMode: 'light',
+    colorMode: {
+      defaultMode: 'light',
+    },
+    // Replace with your project's social card
+    image: 'https://cassiofernando.com/img/social_card.png',
+    navbar: {
+      title: 'Home',
+      logo: {
+        alt: 'Cassio',
+        src: 'img/logo.svg',
+        height: '32px',
+        width: '54px',
       },
-      // Replace with your project's social card
-      image: 'https://cassiofernando.com/img/social_card.png',
-      navbar: {
-        title: 'Home',
-        logo: {
-          alt: 'Cassio',
-          src: 'img/logo.svg',
-          height: '32px',
-          width: '54px',
+      items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Tutorials',
         },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorials',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {href: 'https://cassiofernando.com/pdfs/cassio-fernando-cv.en.pdf', label: 'Curriculum', position: 'right'},
-          {
-            href: 'https://matrix.to/#/@cassio:mozilla.org',
-            label: 'Matrix',
-            position: 'right',
-          },
-          {
-            href: 'https://github.com/cassiofb-dev/cassio-souza',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
-      footer: {
-        links: [
-          {
-            title: 'Pages',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'Tutorials',
-                to: '/tutorials/welcome',
-              },
-            ],
-          },
-          {
-            title: 'Contact',
-            items: [
-              {
-                label: 'Email',
-                href: 'mailto:contact@cassiofernando.com',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/cassiofb_dev',
-              },
-              {
-                label: 'Mastodon',
-                href: 'https://mastodon.social/@cassiofernando',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/cassiofb-dev/cassio-souza',
-              },
-              {
-                label: 'Terminal',
-                href: 'https://term.cassiofernando.com/',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Cássio Fernando.`,
-      },
+        { to: '/blog', label: 'Blog', position: 'left' },
+        { href: 'https://cassiofernando.com/pdfs/cassio-fernando-cv.en.pdf', label: 'Curriculum', position: 'right' },
+        {
+          href: 'https://matrix.to/#/@cassio:mozilla.org',
+          label: 'Matrix',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/cassiofb-dev/cassio-souza',
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
+    },
+    footer: {
+      links: [
+        {
+          title: 'Pages',
+          items: [
+            {
+              label: 'Blog',
+              to: '/blog',
+            },
+            {
+              label: 'Tutorials',
+              to: '/tutorials/welcome',
+            },
+          ],
+        },
+        {
+          title: 'Contact',
+          items: [
+            {
+              label: 'Email',
+              href: 'mailto:contact@cassiofernando.com',
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/cassiofb_dev',
+            },
+            {
+              label: 'Mastodon',
+              href: 'https://mastodon.social/@cassiofernando',
+            },
+          ],
+        },
+        {
+          title: 'More',
+          items: [
+            {
+              label: 'GitHub',
+              href: 'https://github.com/cassiofb-dev/cassio-souza',
+            },
+            {
+              label: 'Terminal',
+              href: 'https://term.cassiofernando.com/',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Cássio Fernando.`,
+    },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+  future: {
+    v4: {
+      removeLegacyPostBuildHeadAttribute: true,
+      useCssCascadeLayers: true,
+      siteStorageNamespacing: true,
+      fasterByDefault: true,
+      mdx1CompatDisabledByDefault: false,
+    },
+    faster: {
+      swcJsLoader: true,
+      swcJsMinimizer: true,
+      swcHtmlMinimizer: true,
+      lightningCssMinimizer: true,
+      rspackBundler: true,
+      rspackPersistentCache: true,
+      ssgWorkerThreads: true,
+      mdxCrossCompilerCache: true,
+    },
+  },
 };
 
 export default config;
