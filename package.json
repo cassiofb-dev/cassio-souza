@@ -2,6 +2,7 @@
   "name": "cassio-souza",
   "version": "0.0.0",
   "private": true,
+  "packageManager": "pnpm@11.3.0",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start --port 3333 --host 0.0.0.0",
@@ -18,12 +19,14 @@
     "@docusaurus/core": "^3.10.1",
     "@docusaurus/faster": "^3.10.1",
     "@docusaurus/preset-classic": "^3.10.1",
+    "@docusaurus/theme-common": "^3.10.1",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mdx-js/react": "^3.1.1",
     "@mui/material": "^9.1.2",
     "@mui/x-data-grid": "^9.7.0",
     "clsx": "^2.1.1",
+    "lodash": "^4.18.1",
     "prism-react-renderer": "^2.4.1",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
@@ -32,6 +35,8 @@
     "@docusaurus/module-type-aliases": "^3.10.1",
     "@docusaurus/tsconfig": "^3.10.1",
     "@docusaurus/types": "^3.10.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
     "typescript": "^6.0.3"
   },
   "browserslist": {
