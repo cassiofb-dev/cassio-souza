@@ -28,9 +28,9 @@ The main contents are explained bellow:
 
 Run ``docker compose up -d`` and open [http://localhost:3333](http://localhost:3333) in your browser.
 
-### With Node and Yarn
+### With Node and pnpm
 
-Run ``yarn`` to install dependencies and then ``yarn serve`` to run the application. Then open [http://localhost:3333](http://localhost:3333) in your browser.
+Run ``pnpm install`` to install dependencies and then ``pnpm run serve`` to run the application. Then open [http://localhost:3333](http://localhost:3333) in your browser.
 
 ## Credits
 
