@@ -9,13 +9,13 @@ tags: [review, hardware, memory]
 
 Hi, Cassio here.
 
-Long time no see, today I will write a quick review about the [Kootion U54 Flash Drive](aliexpress.com/item/1005008505321887.html) (512GB Version).
+Long time no see, today I will write a quick review about the [Kootion U54 Flash Drive](https://aliexpress.com/item/1005008505321887.html) (512GB Version).
 
 <!-- truncate -->
 
 ## Verdict
 
-Checkout my old review with other flash drives at [XrayDisk XRUC3 USB Flash Drive](/blog/2024-01-20-xraydisk-xruc3-usb-flash-drive). TLDR: this is the best flash drive ever with insane pricing.
+Checkout my old review with other flash drives at [XrayDisk XRUC3 USB Flash Drive](../2024-01-20-xraydisk-xruc3-usb-flash-drive/index.md). TLDR: this is the best flash drive ever with insane pricing.
 
 - Total (5/5)
 - Temperature (5/5)
