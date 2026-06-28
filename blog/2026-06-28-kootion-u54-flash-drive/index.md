@@ -2,7 +2,7 @@
 slug: kootion-u54-flash-drive
 title: Kootion U54 Flash Drive Review
 description: Short re   view of Kootion U54 Flash Drive
-image: https://res.cloudinary.com/dfgecuoqu/image/upload/v1782610027/IMG_20260605_154709_uq2ptf.webp
+image: https://res.cloudinary.com/dfgecuoqu/image/upload/v1782610027/IMG_20260605_154709_uq2ptf.jpg
 authors: [cassio]
 tags: [review, hardware, memory]
 ---
@@ -40,7 +40,7 @@ It has both USB-A and USB-C connectors, which is great.
 
 ![Kootion U54 Flash Drive Construction 1](https://res.cloudinary.com/dfgecuoqu/image/upload/v1782610027/IMG_20260605_154709_uq2ptf.webp)
 
-![Kootion U54 Flash Drive Construction 2](https://res.cloudinary.com/dfgecuoqu/image/upload/v1782610026/IMG_20260605_154411_tohjww.webp)
+![Kootion U54 Flash Drive Construction 2](https://res.cloudinary.com/dfgecuoqu/image/upload/v1782610026/IMG_20260605_154635_bivch5.webp)
 
 ## Value
 

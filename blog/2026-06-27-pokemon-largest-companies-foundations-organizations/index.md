@@ -2,7 +2,7 @@
 slug: pokemon-largest-companies-foundations-organizations
 title: Pokemon Largest Companies/Foundations/Organizations
 description: Pokemon Largest Companies/Foundations/Organizations
-image: https://res.cloudinary.com/dfgecuoqu/image/upload/v1782612895/ChatGPT_Image_27_de_jun._de_2026_23_12_25_dcynku.png
+image: https://res.cloudinary.com/dfgecuoqu/image/upload/v1782612895/ChatGPT_Image_27_de_jun._de_2026_23_12_25_dcynku.jpg
 authors: [cassio]
 tags: [pokemon, companies, foundations, organizations]
 ---
